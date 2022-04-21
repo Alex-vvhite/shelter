@@ -1,0 +1,29 @@
+.name_block{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    font-family: 'Georgia';
+    color: #545454;
+    max-width: 400px;
+    .name{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+.name_spacing{
+    letter-spacing: 0.06em;
+}
+//Подпись карточек с животными
+.name_pets{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    font-family: 'Georgia';
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
