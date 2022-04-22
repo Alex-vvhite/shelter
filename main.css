@@ -71,11 +71,8 @@ html, body {
           align-items: center;
 }
 
-.item_logo {
-  width: 186px;
-}
-
 .header_name {
+  width: 186px;
   font-family: "Georgia";
   font-size: 32px;
   line-height: 110%;
