@@ -3,31 +3,31 @@
     .footer__container{
         min-height: 310px;
         padding-top: 40px;
-        @include mobile{
+        @include table{
             padding-top: 30px;
         }
         .footer__items{
             display: flex;
             justify-content: space-between;
-            @include table{
+            @include desktop{
                 flex-direction: column;
                 align-items: center;
             }
             .footer__inormation{
                 display: flex;
                 column-gap: 160px;
-                @include table{
+                @include desktop{
                     column-gap: 60px;
                     padding-bottom: 65px;
                 }
-                @include mobile{
+                @include table{
                     flex-direction: column;
                 }
             }
             .item__block{
-                width: 280px;
+                max-width: 305px;
                 margin-top: 16px;
-                @include mobile{
+                @include table{
                     margin-top: 0;
                     margin-bottom: 40px;
                 }
@@ -35,7 +35,7 @@
                     text-align: left;
                     letter-spacing: 0.06em;
                     color: #FFFFFF;
-                    @include mobile{
+                    @include table{
                         font-size: 25px;
                         line-height: 130%;
                         text-align: center;
@@ -50,24 +50,22 @@
                     letter-spacing: 0.06em;
                     color: #F1CDB3;
                     .block-width-1,.block-width{
-                        width: 350px;
+                        max-width: 350px;
                     }
-                    @include mobile{
-                        .block-width-1{
-                            width: 280px;
+                    @include desktop{
+                        .block_width_1{
+                            max-width: 280px;
                         }
-                        .block-width{
-                            width:300px;
+                        .block_width{
+                            max-width:350px;
                         }
-                        
-                        
                     }
                     .icon{
                         display: flex;
                         margin-right: 20px;
                         height: 32px;
                         width: 40px;
-                        @include mobile{
+                        @include table{
 
                         }
                     }
@@ -99,15 +97,8 @@
             }
             .item__image{
                 display: flex;
-                background-image: url(image/footer/footer-puppy.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                min-width: 300px;
-                min-height: 310px;
-                @include mobile{
-                    background-image: url(image/footer/footer-mobile.png);
-                    background-repeat: no-repeat;
-                    background-position: bottom;
+                .footer__image{
+                    max-width: 100%;
                 }
             }
         }
@@ -117,7 +108,7 @@
 .contacts{
     display: flex;
     align-items: center;
-    @include mobile{
+    @include table{
         justify-content: center;
     }
 }
@@ -129,10 +120,10 @@
     margin-top: 40px;
     margin-bottom: 40px;
     padding-right: 16px;
-    @include table{
+    @include desktop{
         padding-right: 19px;
     }
-    @include mobile{
+    @include table{
         padding-right: 19px;
     }
 }
