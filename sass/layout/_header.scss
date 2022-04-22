@@ -1,0 +1,87 @@
+/*===================================HEADER=========================================*/
+.header{
+    background-position: top center;
+    background-size: 100%;
+
+}
+.header_img{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop{
+        padding-top: 30px;
+    }
+}
+.header_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item_logo{
+    width: 186px;
+    height: 60px;
+}
+.header_name{
+    font-family: 'Georgia';
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+.header_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.nav-list{
+    display: flex;
+}
+.nav-link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    transition: 0.2s;
+}
+.link-bordered{
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 6px;
+}
+.nav-item:not(:last-child){
+    margin-right: 35px;
+}
+.nav-link:hover{
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 6px;
+}
+//For page "our pets"
+.header_mod_white{
+    color: #545454;
+    transition: 0.2s;
+    &:hover{
+        color: #292929;
+    }
+}
+.header_white{
+    background-color: #FFFFFF;
+    padding: 30px 0px 30px 0px;
+}
+.link-bordered-2{
+    color: #292929;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 6px;
+}
+.header-menu{
+    @include table{
+        display: none;
+    }
+
+}

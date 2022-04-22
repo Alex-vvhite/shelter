@@ -1,0 +1,50 @@
+/*===================================button:start_screen=========================================*/
+.button{
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    padding: 15px 45px 15px 45px;
+    border-radius: 100px;
+    transition: 0.2s;
+    &:hover{
+        background-color: #FDDCC4;
+        cursor: url(image/icon_mouse/icon.png), auto;
+    }
+}
+.color{
+    background-color: #F1CDB3;
+}
+/*===================================button:pets=========================================*/
+.border{
+    border: 2px solid #F1CDB3;
+    background: #FAFAFA;
+    &:hover{
+        background: #FDDCC4;
+        border:2px solid #FDDCC4;
+        cursor: url(image/icon_mouse/icon.png), auto;
+    }
+}
+.scroll{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.scroll-arrow:hover{
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    cursor: url(image/icon_mouse/icon.png), auto;
+}

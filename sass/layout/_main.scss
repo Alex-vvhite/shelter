@@ -1,0 +1,422 @@
+.main{
+    overflow: hidden;
+}
+/*===================================start_screen=========================================*/
+.start_screen{    
+ .start_screen_container{
+       display: flex;
+       justify-content: space-between;
+        @include desktop{
+            flex-direction: column;
+            align-items: center;
+        }
+        .item_image{    
+            display: flex;
+            justify-content: flex-end;
+          .start_dog{  
+            display:flex;
+            max-width: 100%;
+            @include desktop{
+                padding-top: 100px;
+                max-width: 80%;
+            }
+            @include table{
+                padding-top: 105px;
+            }
+          }
+        }
+        .item_info{
+            max-width: 460px;
+            padding-top: 163px;
+            @include desktop{
+                padding-top: 0;
+            }
+            @include table{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .name_block{
+                max-width: 310px;
+                font-size: 44px;
+                line-height: 130%;
+                font-style: normal;
+                color: #FFFFFF;
+                font-family: 'Georgia';
+                font-weight: 400;
+                @include table{
+                    font-size: 25px;
+                    letter-spacing: 0.06em;
+                    padding: 0px 20px 0px 20px;
+                    max-width: 300px;
+                }
+                .name__start{
+                    text-align: left;
+                    @include table{
+                        text-align: center;
+                    }
+                }
+            }
+            .text_block{
+                font-family: 'Arial';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                color: #CDCDCD;
+                margin-top: 42px;
+                margin-bottom: 42px;
+                @include table{
+                    max-width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/*===================================about=========================================*/
+.about{background-color: #FFFFFF;}
+.about_container{
+    .about_items{
+        padding-bottom: 100px;
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        .item_image{
+            .dog{
+                width: 300px;
+                @include mobile{
+                    max-width: 100%;
+                }
+            }
+        }
+        @include desktop {
+            flex-direction: column-reverse;
+            padding-top: 60px;
+            padding-left: 160px;
+            padding-right: 160px;
+            align-items: center;
+            .item_image{ 
+                margin-top: 80px;
+                margin-bottom: 100px;
+            }
+        }
+        @include table{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .item_info{
+            max-width: 430px;
+          
+             @include table{
+                 max-width: 300px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+             }
+
+            .name_block{
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                font-family: 'Georgia';
+                letter-spacing: 0.06em;
+                color: #545454;
+                .name{
+                    text-align: left;
+                    @include table{
+                        text-align: center;
+                         max-width: 80%;
+                    }
+                }
+                @include table{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 25px;
+                    
+                }
+            }
+            .text_block{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                font-family: 'Arial';
+                color: #4C4C4C;
+                margin-top: 25px;
+                @include mobile{
+                    max-width: 270px;
+                    text-align:justify;
+                }
+            }
+        }
+    }
+}
+/*===================================pets=========================================*/
+.pets{
+    background: #F6F6F6;
+    .pets_container{
+        .pets_items{
+            padding-top: 80px;
+           padding-bottom: 100px;
+            text-align: center;
+            @include mobile{
+                padding-bottom: 42px;
+               
+            }
+            .name__pets{
+                margin: 0 auto;
+                letter-spacing: 0.06em;
+                @include desktop{
+                    font-size: 25px;
+                    padding-top: 42px;
+                }
+            }
+            .slider_blocks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                @include desktop{
+                    .block_pet:nth-child(3){
+                        display: none;
+                    }
+                }
+                @include table{
+                   
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-bottom: 42px;
+                    .block_pet:nth-child(2){
+                      flex-basis: 100%;
+                        order: -1;
+                    }
+                    .block_pet:nth-child(1){
+                        display: none;
+                    }
+                    .block_pet:nth-child(4){
+                        display: none;
+                    }
+                  
+                }
+                .scroll-arrow:first-child{
+                    background-image: url(image/main/pets/left.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    @include table{
+                        margin-right: 43px;
+                    }
+                }
+                .scroll-arrow:last-child{
+                    background-image: url(image/main/pets/right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    @include table{
+                        margin-left: 43px;
+                    }
+                }
+            }
+        }
+    }
+}
+.block_pet{
+    min-height: 435px;
+    background-color: #FAFAFA;
+    border-radius: 9px;
+    text-align: center;
+}
+/*===================================help=========================================*/
+.help{
+    min-height: 611px;
+    background-color: #FFFFFF;
+    width: 100%;
+    .help__container{
+        min-height: 431px;
+        margin: 0 auto;
+        .name__help{
+            padding-top: 80px;
+            margin: 0 auto;
+            letter-spacing: 0.06em;
+            @include mobile{
+                font-size: 25px;
+            }
+        }
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 55px;
+            padding-top: 60px;
+            //column-gap: 120px;
+            text-align: center;
+            justify-content: center;
+            @include table{
+                row-gap: 55px;
+                padding-bottom: 100px;
+            }
+            @include mobile{
+                display: inline-flex;
+                justify-content: flex-start;
+                column-gap: 60px;
+                margin-left: 15px;
+            }
+            .icon{
+                width: 170px;
+                height: 113px;
+                margin-right: 60px;
+                @include table{
+                  text-align: center;
+                  margin-right: 30px;
+                  margin-left: 30px;
+                }
+                @include mobile{
+                  text-align: center;
+                  margin: 0;
+                  width: 100px;
+                  height: 87px;
+                }
+            }
+            .icon__name{
+                font-family: 'Georgia';
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+                color: #545454;
+                padding-top: 30px;
+                @include mobile{
+                    font-size: 15px;
+                    line-height: 110%;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+/*===================================donation=========================================*/
+.donation{
+    min-height: 462px;
+    background-color:  #F6F6F6;
+    .donation__container{
+        min-height: 282px;
+        .donation__items{
+            display: flex;
+            padding-top: 80px;
+            justify-content: center;
+            @include mobile{
+                padding-top: 42px;
+            }
+            .item__dog{
+                background-image: url(image/main/donation/donation-dog.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 505px;
+                height: 261px;
+                @include table{
+                    margin-bottom: 100px;
+                }
+            }
+            @include table{
+                flex-direction: column-reverse;
+                align-items: center;
+                .item__dog{
+                    padding-bottom: 100px;
+                }
+            }
+            @include mobile{
+                .item__dog{
+                background-image: url(image/main/donation/mobile-dog.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width:260px ;
+                height: 135px;
+                    margin-bottom: 42px;
+                }
+            }
+            .item__info{
+                max-width: 380px;
+                margin-left: 30px;
+                @include table{
+                    padding-bottom: 60px;
+                }
+                @include mobile{
+                    max-width: 300px;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .name__donation{
+                    align-items: flex-start;
+                    @include mobile{
+                        font-size: 25px;
+                        justify-content: center;
+                        max-width: 200px;
+                        .enter{
+                            text-align: center;
+                        }
+                    }
+                }
+                .text{
+                    font-family: 'Georgia';
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 110%;
+                    letter-spacing: 0.06em;
+                    color: #545454;
+                    margin-top: 20px;
+                    @include mobile{
+                        line-height: 160%;
+                        letter-spacing: 0;
+                    }
+                }
+                .credit__cart{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    padding:10px 15px;
+                    background: #F1CDB3;
+                    border-radius: 9px;
+                    display: flex;
+                    justify-content: center;
+                    width: 349px;
+                    .number{
+                        width: 319px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-family: 'Georgia';
+                        letter-spacing: 0.06em;
+                        color: #545454;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 115%;
+                        background: url(image/main/donation/credit-card.svg) no-repeat left;
+                      
+                        .card__image{
+                            margin-right: 15px;
+                        }
+                        @include mobile{
+                            font-size: 15px;
+                            line-height: 110%;
+                            background-size: 32px 17px;
+                        }
+                    }
+                    @include mobile{
+                        width: 281px;
+                    }
+                }
+                .text_2{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-family: 'Arial';
+                    font-style: italic;
+                    color: #B2B2B2;
+                    @include mobile{
+                        max-width: 280px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
