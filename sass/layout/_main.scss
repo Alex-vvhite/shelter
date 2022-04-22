@@ -97,12 +97,12 @@
             align-items: center;
             .item_image{ 
                 margin-top: 80px;
-                margin-bottom: 100px;
             }
         }
         @include table{
             padding-left: 0;
             padding-right: 0;
+            padding-bottom: 42px;
         }
         .item_info{
             max-width: 430px;
@@ -160,14 +160,14 @@
             text-align: center;
             @include mobile{
                 padding-bottom: 42px;
-               
+                padding-top: 42px;
             }
             .name__pets{
                 margin: 0 auto;
                 letter-spacing: 0.06em;
+                line-height: 130%;
                 @include desktop{
                     font-size: 25px;
-                    padding-top: 42px;
                 }
             }
             .slider_blocks{
@@ -189,6 +189,7 @@
                     .block_pet:nth-child(2){
                       flex-basis: 100%;
                         order: -1;
+                        margin-bottom: 20px;
                     }
                     .block_pet:nth-child(1){
                         display: none;
@@ -226,18 +227,21 @@
 }
 /*===================================help=========================================*/
 .help{
-    min-height: 611px;
+    // min-height: 611px;
     background-color: #FFFFFF;
     width: 100%;
     .help__container{
-        min-height: 431px;
+        padding-bottom: 100px;
+        
         margin: 0 auto;
         .name__help{
             padding-top: 80px;
             margin: 0 auto;
             letter-spacing: 0.06em;
-            @include mobile{
+            line-height: 130%;
+            @include table{
                 font-size: 25px;
+                padding-top: 42px;
             }
         }
         .icons{
@@ -248,26 +252,29 @@
             //column-gap: 120px;
             text-align: center;
             justify-content: center;
-            @include table{
+            @include desktop{
                 row-gap: 55px;
-                padding-bottom: 100px;
+                // padding-bottom: 100px;
             }
-            @include mobile{
+            @include table{
                 display: inline-flex;
-                justify-content: flex-start;
+                // justify-content: flex-start;
                 column-gap: 60px;
                 margin-left: 15px;
+            }
+            @include mobile{
+                justify-content: flex-start;
             }
             .icon{
                 width: 170px;
                 height: 113px;
                 margin-right: 60px;
-                @include table{
+                @include desktop{
                   text-align: center;
                   margin-right: 30px;
                   margin-left: 30px;
                 }
-                @include mobile{
+                @include table{
                   text-align: center;
                   margin: 0;
                   width: 100px;
@@ -283,7 +290,7 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 padding-top: 30px;
-                @include mobile{
+                @include table{
                     font-size: 15px;
                     line-height: 110%;
                     padding-top: 20px;
@@ -294,35 +301,36 @@
 }
 /*===================================donation=========================================*/
 .donation{
-    min-height: 462px;
+    // min-height: 462px;
     background-color:  #F6F6F6;
     .donation__container{
-        min-height: 282px;
+        // min-height: 282px;
         .donation__items{
             display: flex;
             padding-top: 80px;
             justify-content: center;
-            @include mobile{
+            padding-bottom: 100px;
+            @include table{
                 padding-top: 42px;
             }
             .item__dog{
-                background-image: url(image/main/donation/donation-dog.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 505px;
-                height: 261px;
-                @include table{
-                    margin-bottom: 100px;
+                // background-image: url(image/main/donation/donation-dog.png);
+                // background-repeat: no-repeat;
+                // background-position: center;
+                // width: 505px;
+                // height: 261px;
+                .donation_image{
+                    max-width: 100%;
+                }
+                @include desktop{
+                    // margin-bottom: 100px;
                 }
             }
-            @include table{
+            @include desktop{
                 flex-direction: column-reverse;
                 align-items: center;
-                .item__dog{
-                    padding-bottom: 100px;
-                }
             }
-            @include mobile{
+            @include table{
                 .item__dog{
                 background-image: url(image/main/donation/mobile-dog.png);
                 background-repeat: no-repeat;
@@ -335,10 +343,10 @@
             .item__info{
                 max-width: 380px;
                 margin-left: 30px;
-                @include table{
+                @include desktop{
                     padding-bottom: 60px;
                 }
-                @include mobile{
+                @include table{
                     max-width: 300px;
                     margin: auto;
                     display: flex;
@@ -347,13 +355,15 @@
                 }
                 .name__donation{
                     align-items: flex-start;
-                    @include mobile{
+                    line-height: 130%;
+                    @include table{
                         font-size: 25px;
                         justify-content: center;
                         max-width: 200px;
-                        .enter{
-                            text-align: center;
-                        }
+                        // letter-spacing: 0rem;
+                        // .enter{
+                        //     text-align: center;
+                        // }
                     }
                 }
                 .text{
@@ -364,7 +374,7 @@
                     letter-spacing: 0.06em;
                     color: #545454;
                     margin-top: 20px;
-                    @include mobile{
+                    @include table{
                         line-height: 160%;
                         letter-spacing: 0;
                     }
@@ -394,13 +404,13 @@
                         .card__image{
                             margin-right: 15px;
                         }
-                        @include mobile{
+                        @include table{
                             font-size: 15px;
                             line-height: 110%;
                             background-size: 32px 17px;
                         }
                     }
-                    @include mobile{
+                    @include table{
                         width: 281px;
                     }
                 }
@@ -411,7 +421,7 @@
                     font-family: 'Arial';
                     font-style: italic;
                     color: #B2B2B2;
-                    @include mobile{
+                    @include table{
                         max-width: 280px;
                         text-align: justify;
                     }
