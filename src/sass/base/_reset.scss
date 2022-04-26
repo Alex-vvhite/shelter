@@ -30,10 +30,13 @@ html,body{
     line-height: 1;
     font-size: 20px;
     color:black;
-    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;;
+    background:radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;;
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0; 
     padding: 0;
     scroll-behavior: smooth;
+}
+._lock{
+    overflow: hidden;
 }

@@ -20,13 +20,20 @@
     @include table{
         display: block;
         padding-right: 43px;
+        z-index: 2;
+        position: relative;
+        padding-top: 15px;
     }
+}
+.active{
+    transform: rotate(-90deg);
 }
 .hamburger{
     display: inline-block;
     width: 30px;
     height: 22px;
     position: relative;
+    transition: 0.3s;
     .hamburger__line{
         @extend %hamburger-line;
         top: calc(50% - 1.5px);

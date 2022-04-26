@@ -15,10 +15,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // @include table{
+    //     justify-content: flex-end;
+    // }
 }
  .item_logo{
     width: 186px;
     height: 60px;
+    position: relative;
+    z-index: 2;
+    // @include table{
+    //     margin-right: 43px;
+    // }
  }
 .header_name{
     width: 190px;
@@ -80,9 +88,62 @@
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 6px;
 }
+///////////////////////Боковая шторка/////////////////////////////
 .header-menu{
     @include table{
-        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        transform:translate(100%,0px);
+        width: 320px;
+        height: 100%;
+        background: #292929;
+        padding-top: 248px;
+        padding-left: 39px;
+        transition: right 0.3s ease 0s;
+        // transition: 0.3s;
+        overflow: auto;
+       
+        .nav-list{
+            @include table{
+                display: flex;
+                flex-direction: column;
+                .nav-item:not(:last-child){
+                    padding-bottom: 40px;
+                }
+                .nav-link{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 160%;
+                }
+                .link-bordered{
+                    text-decoration:3px line-through #F1CDB3; 
+                    border: 0;
+                }
+            }
+        }
     }
-
 }
+.active-menu{
+    transform:translate(0px,0px);
+}
+.active-header{
+    justify-content: flex-end;
+}
+.active-item{
+    margin-right: 43px;
+   
+    &::before{
+        content: "";
+        position: fixed;
+        width: 320px;
+        top: 0;
+        right: 0;
+        height: 90px;
+        background-color: #292929;
+        z-index: -1;
+    }
+}
+
