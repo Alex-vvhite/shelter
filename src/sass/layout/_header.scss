@@ -63,6 +63,9 @@
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 6px;
 }
+.border-black{
+    color:#292929;
+}
 .nav-item:not(:last-child){
     margin-right: 35px;
 }
@@ -121,6 +124,7 @@
                 .link-bordered{
                     text-decoration:3px line-through #F1CDB3; 
                     border: 0;
+                    color: #FAFAFA;
                 }
             }
         }
@@ -128,13 +132,18 @@
 }
 .active-menu{
     transform:translate(0px,0px);
+    .header_mod_white{
+        color: #CDCDCD;
+    }
 }
 .active-header{
     justify-content: flex-end;
 }
 .active-item{
     margin-right: 43px;
-   
+    .header_mod_white{
+        color:#F1CDB3;;
+    }
     &::before{
         content: "";
         position: fixed;
